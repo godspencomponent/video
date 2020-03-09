@@ -1,0 +1,32 @@
+{
+  "presets": [
+    "es2015",
+    [
+      "env",
+      {
+        "targets": {
+          "browsers": [
+            "> 0.5%",
+            "Android > 4.3",
+            "iOS > 7"
+          ]
+        }
+      }
+    ],
+    "stage-3"
+  ],
+  "comments": true,
+  "env": {
+    "production": {
+      "plugins": [
+        [
+          "transform-runtime",
+          {
+            "polyfill": false,
+            "regenerator": false
+          }
+        ]
+      ]
+    }
+  }
+}
